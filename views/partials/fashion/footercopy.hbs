@@ -1,0 +1,214 @@
+  <footer class="nav-tools-footer footer-img">
+    <div class="fashion-nav-footer-contact">
+      <div class="nav-bounds nav-bounds--contact {{#if interestLinks}} fashion-nav-footer--with-links-pages {{/if}}">
+        <div class="fashion-nav-footer__brand-col header--custom-text">
+          {{#if logo}}
+          <a class="nav-fashion-header__logo" href="/" id="logo-wrapper">
+            <span class="nav-header__title-hidden">{{name}}</span>
+            <img class="nav-header__image-footers" src="https://iili.io/JFDqbSt.png" alt="{{name}}" itemprop="logo" />
+          </a>
+          {{else}}
+          <h3 class="nav-footer-contact-title header--custom-text">
+            <a href="/">{{name}}</a>
+          </h3>
+          {{/if}}
+          {{#if showLogoCaption}}
+          <p class="fashion-nav-footer__logo-caption">{{{logoCaption}}}</p>
+          {{/if}}
+          {{#if showSocialMedia}}
+          <div class="fashion-nav-footer__social-media--responsive">
+            {{#each socialNetworks}}
+            {{!-- <a href="{{url}}" rel="noreferrer noopener nofollow" target="_blank" class="header--custom-svg"> --}}
+              {{!-- {{> (concat 'icons/social_networks/' (lookup . 'name'))}} --}}
+            </a>
+            {{/each}}
+          </div>
+          {{/if}}
+        </div>
+            {{!-- <div class="secciones-footer seccion-footer-compania">
+          <h3>Compañía</h3>
+          <div class="categorias-footer-container">
+            <ul>
+              <li class="categorias-footer"><a href="">Sobre nosotros</a></li>
+              <li class="categorias-footer"><a href="">Términos y condiciones</a></li>
+              <li class="categorias-footer"><a href="">Política de privacidad</a></li>
+              <li class="categorias-footer"><a href="">Política de cookies</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="secciones-footer">
+           <h3>Soporte</h3>
+          <div class="categorias-footer-container">
+            <ul>
+              <li class="categorias-footer"><a href="">FAQ</a></li>
+              <li class="categorias-footer"><a href="">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+         <div class="secciones-footer seccion-footer-redes">
+          <h3>Seguinos</h3>
+          <div class="logos-redes-footer">
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/512/1051/1051309.png" alt=""></a>
+            <a href=""><img src="https://cdn-icons-png.flaticon.com/512/3536/3536569.png" alt=""></a>
+          </div>
+        </div> --}}
+            <div class="fashion-nav-footer__categories-col header--custom-border">
+      <div class="categorias-contacto-container">
+      <div class="nav-tools-footer__contact">
+        <h3 class="footer-text">CATEGORÍAS</h3>
+        <a href="/calzado" class="footer-text">Calzado</a>
+        <a href="/indumentaria" class="footer-text">Indumentaria</a>
+        <a href="/accesorios" class="footer-text">Accesorios</a>
+        <a href="/new" class="footer-text">NEW</a>
+      </div>
+      
+
+              {{!-- {{> fashion/views/partials/icons/dropdown}} --}}
+            </div>
+            {{!-- <div class="fashion-nav-footer__categories-title__icon-up"> --}}
+              
+              {{!-- {{> fashion/views/partials/icons/up }} --}}
+            </div>
+               <div class="fashion-nav-footer__categories-col header--custom-border">
+   <div class="nav-tools-footer__contact">
+  <h3 class="footer-text">CONTACTO</h3>
+              <a class="footer-text" itemprop="telephone" href="tel:" rel="nofollow" target="_blank">Tel:(341) 3125611 </a>
+              <a class="footer-text" href="mailto:info@pindal.com.ar" target="_blank" >info@pindal.com.ar</a>
+              <a
+                class="footer-text"
+                href="https://www.google.com/maps/place/DISTRIBUIDORA+PUCARA+-+PINDAL+STORE/@-32.8164929,-60.7193256,17z/data=!4m15!1m8!3m7!1s0x95b650ff0fee9e45:0x69d11ebc70b81d4a!2s2+de+Abril+415,+S2154+Cap.+Berm%C3%BAdez,+Santa+Fe!3b1!8m2!3d-32.8164929!4d-60.7193256!16s%2Fg%2F11thrd19mf!3m5!1s0x95b6505590679241:0xc862a067044301b6!8m2!3d-32.8165107!4d-60.7193098!16s%2Fg%2F1tq6fn_w?entry=ttu"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+              >
+                Dos de Abril 415 Capitan Bermudez,
+                Santa Fe 
+              </a>
+              <div>
+          </div>
+       </div>
+             
+              {{#with address}}
+             <div class="secciones-footer seccion-footer-redes">
+          <h3>Seguinos</h3>
+          <div class="logos-redes-footer">
+            <a href="https://www.facebook.com/people/Pindal-Store/100067826538733/"><img src="https://cdn-icons-png.flaticon.com/512/1051/1051309.png" alt=""></a>
+            <a href="https://www.instagram.com/pindalstore/"><img src="https://iili.io/JfdvDsp.png" alt=""></a>
+          </div>
+        </div>
+            {{/with}}
+            </div>
+            {{#each menu}}
+            
+                </a>
+              </span>
+            {{/each}}
+          </div>
+        {{#if interestLinks}}
+          <div class="fashion-nav-footer__links-pages-container header--custom-border">
+            <div class="fashion-nav-footer__links-pages dropdown">
+              <div class="fashion-nav-footer__link-pages__title-container dropdown-title">
+                <h4 class="fashion-nav-footer__link-pages__title header--custom-text">{{i18n.interestLinksLabel}}</h4>
+                <div class="fashion-nav-footer__link-pages__icon-down">
+                  {{> fashion/views/partials/icons/dropdown}}
+                </div>
+                <div class="fashion-nav-footer__link-pages__icon-up">
+                  {{> fashion/views/partials/icons/up }}
+                </div>
+              </div>
+              <div class="fashion-nav-footer__link-pages__links-container dropdown-content">
+                {{#each interestLinks}}
+                  <a class="fashion-nav-footer__link header--custom-text" href="{{url}}">
+                    {{name}}
+                  </a>
+                {{/each}}
+              </div>
+            </div>
+          </div>
+        {{/if}}
+        <div class="fashion-nav-footer__pages header--custom-border">
+          <span class="fashion-nav-footer__page">
+            <a href="{{linkToHowBuy.href}}" class="header--custom-text">{{linkToHowBuy.label}}</a>
+          </span>
+        </div>
+     
+        <div class="fashion-nav-footer__contact-col">
+          {{#if showSocialMedia}}
+          <div class="fashion-nav-footer__social-media">
+            {{#each socialNetworks}}
+            {{!-- <a href="{{url}}" rel="noreferrer noopener nofollow" target="_blank" class="header--custom-svg"> --}}
+              {{!-- {{> (concat 'icons/social_networks/' (lookup . 'name'))}} --}}
+            </a>
+            {{/each}}
+          </div>
+          {{/if}}
+          {{#if showContact}}
+       
+            {{#if showPhone}} 
+            {{!-- <li class="contact-phone-number">
+              <a class="header--custom-text" itemprop="telephone" href="tel:{{phone.raw}}" rel="nofollow">Tel:
+                {{phone.formatted}}</a> --}}
+            </li> 
+            {{/if}}
+            {{#if showEmail}}
+           {{!-- <li class="contact-mail">
+              <a class="header--custom-text" itemprop="email" href="mailto:{{email}}" rel="nofollow">{{email}}</a>
+            </li>  --}}
+            {{/if}}
+            {{#if showAddress}}
+            {{#with address}}
+             {{!-- <li>
+              <span class="header--custom-text" itemprop="streetAddress">{{address}}</span>
+              <span class="header--custom-text" itemprop="addressLocality">{{city}}</span>
+              <span class="header--custom-text" itemprop="addressRegion">{{state}}</span>
+             </li>   --}}
+            {{/with}}
+            {{/if}}
+            <meta itemprop="contactType" content="customer service" />
+          </ul>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+    <div role="contentinfo" class="fashion-nav-footer nav-footer header--custom-text header--custom-background">
+    <div class="nav-bounds nav-bounds--copyright header--custom-border">
+      <div class="nav-footer-primaryinfo">
+        <small class="nav-footer-copyright">
+          <div class="nav-footer-disclaimer">
+            <div>
+              <div class="nav-footer-about">
+                 
+              {{#if showBusinessData}}
+                {{#with fiscalData}}
+                  <div class="nav-footer-fiscal-data">
+                    <p class="nav-footer-fiscal-data__name">{{legal_name}}</p>
+                    <p class="nav-footer-fiscal-data__id">{{legal_doc}}</p>
+                  </div>
+                {{/with}}
+              {{/if}}
+            </div>
+            <div class="nav-footer-about">
+          <a href="{{{linkToMShopsLandingPage}}}" target="_blank" class="footer-text">{{i18n.powered_by}}</a>
+          {{#if linkToLegalNotices}}
+            <a href="{{linkToLegalNotices.href}}" class="footer-text">{{linkToLegalNotices.label}}</a>
+          {{/if}}
+          {{#if linkToHowBuy}}
+            {{!-- <a href="{{linkToHowBuy.href}}" class="footer-text">{{linkToHowBuy.label}}</a> --}}
+          {{/if}}
+          {{#if linkToLGPD}}
+            <a href="{{linkToLGPD.href}}" class="footer-text">{{linkToLGPD.label}}</a>
+          {{/if}}
+          <a href="https://galarreta.co/" target="_blank" class="footer-text">Developed by GALARRETA®</a>
+        </div>
+            {{#if showQrData}}
+            {{#with fiscalData}}
+            <a href={{qr_link}} target="_F960AFIPInfo">
+              <img class="nav-footer-afip-img" src={{qr_img}} alt="Data fiscal" />
+            </a>
+            {{/with}}
+            {{/if}}
+          </div>
+        </small>
+      </div>
+    </div>
+    </div>
+  </footer>
