@@ -2337,7 +2337,11 @@ a:visited {
     width: 1050px;
     overflow: hidden
 }
-
+@media(max-width:768px){
+    .marcas-section-carrusel{
+        overflow: scroll;
+    }
+}
 .marcas-section-carrusel-container {
     display: flex;
     transition: transform .7s ease-in-out
@@ -2418,7 +2422,8 @@ a:visited {
     }
 
     .marcas-section-button img {
-        width: 38px
+        /* width: 38px */
+        display: none;
     }
 
     .custom-container {
@@ -2437,8 +2442,8 @@ a:visited {
 
 .nav-header__image {
     height: auto;
-    max-height: 105px;
-    max-width: 110px;
+    max-height: 125px;
+    max-width: 180px;
     width: auto
 }
 
@@ -2454,8 +2459,8 @@ a:visited {
 .logo-pelota-texto {
     position: absolute;
     width: 68px;
-    left: 36%;
-    top: 6%
+    left: 33.5%;
+    top: 5%
 }
 
 .nav-footer-disclaimer {
@@ -2663,9 +2668,9 @@ a:visited {
         justify-content: space-between !important
     }
 
-    .header--custom-svg {
+    /* .header--custom-svg {
         fill: #e4007e !important;
-    }
+    } */
 
     .nav-fashion-menu .nav-fashion-search-form button,
     .nav-fashion-menu .nav-fashion-search-form input {
@@ -2951,9 +2956,9 @@ section.footer-segunda-section {
 
     .logo-pelota-texto {
         position: absolute;
-        width: 68px;
-        left: 1%;
-        top: 5%;
+        width: 58px;
+        left: 4%;
+        top: -1%;
     }
 
     .logo-pelota-producto {
@@ -3175,6 +3180,9 @@ section.footer-segunda-section {
 }
 
 /* CARROUSEL MARCAS */
+#busca-por-marca-custom{
+    margin: 0 !important;
+}
 .buscar_marca {
     display: flex;
     align-items: center;
@@ -3193,4 +3201,16 @@ section.footer-segunda-section {
 
 .logo_ringo {
     filter: invert();
+}
+/* BOTON DE COMPRAR Y AGREGAR AL CARRITO */
+.ui-pdp-actions .ui-pdp-action-primary, .ui-pdp-actions .ui-pdp-action-primary--disabled{
+    background-color: #000 !important;
+}
+
+button.andes-button--quiet{
+    background-color: #E4007E !important;
+    
+}
+.andes-button--quiet .andes-button__content, .ui-pdp-actions .ui-pdp-action-primary--disabled, .ui-pdp-actions .ui-pdp-action-secondary--disabled, .andes-button--loud .andes-button__content{
+    color: #fff !important;
 }
